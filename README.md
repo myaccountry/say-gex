@@ -1,2 +1,2 @@
 # say-gex
-messenger
+Python messenger
