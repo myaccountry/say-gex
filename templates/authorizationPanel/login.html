@@ -6,17 +6,17 @@
     <meta name="author" content="cookOLDersTeam">
     <meta name="description" content="Messenger on python flask, SayGex">
     <title>SayGex - Auth</title>
-    <link rel="stylesheet" href="css_content/login.css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/authorizationPanel/login.css') }}">
 </head>
 <body>
   <div class="welcomeMsg">
-      <img src="../image_content/icon_photo.png" width="100px">
+      <img src="{{ url_for('static', filename='images/icon_photo.png') }}" width="100px">
       <div id="projectName">
           Authorization
       </div>
   </div>
   <div class="backToMain">
-    <a href="../main.html">Return to Welcome Page</a>    
+    <a href="/">Return to Welcome Page</a>    
   </div>
   <div class="form-box">
     <div class="form-value">
@@ -35,7 +35,7 @@
             </div>
             <button>Confirm</button>
             <div class="register">
-                <p>Have no account? <a href="registration.html">Register!!!</a></p>
+                <p>Have no account? <a href="/reg">Register!!!</a></p>
             </div>
         </form>
     </div>

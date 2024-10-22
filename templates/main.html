@@ -6,12 +6,12 @@
     <meta name="author" content="cookOLDersTeam">
     <meta name="description" content="Messenger on python flask, SayGex">
     <title>SayGex</title>
-    <link rel="stylesheet" href="css_content/main.css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
     
     <div class="welcomeMsg">
-        <img src="image_content/icon_photo.png" width="125px">
+        <img src="{{ url_for('static', filename='images/icon_photo.png') }}" width="125px" >
         <div id="projectName">
             SayGex Online
         </div>
@@ -56,7 +56,7 @@
                 </div>
                 <button>Confirm</button>
                 <div class="register">
-                    <p>Have no account? <a href="authorizationPanel/registration.html">Register!!!</a></p>
+                    <p>Have no account? <a href="/reg">Register!!!</a></p>
                 </div>
             </form>
         </div>
